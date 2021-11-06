@@ -18,7 +18,7 @@ export default (state = initialState, action) => {
         case "DELETE_TODO_LIST":
             return {
                 ...state,
-                dataList: state.dataList.filter((data, i) => i == action.payload)
+                dataList: state.dataList.filter((data, i) => i !== action.payload)
             };
         default:
             break;
