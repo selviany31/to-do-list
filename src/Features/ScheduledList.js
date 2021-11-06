@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import Card from '../Components/Card'
-import { createTodoList } from '../Redux/Action'
+import { createTodoList, deleteToDoList } from '../Redux/Action'
 
 const ScheduledList = () => {
     const dispatch = useDispatch()
@@ -22,6 +22,10 @@ const ScheduledList = () => {
         dispatch(createTodoList(body))
     }
 
+    // const handleDelete = (id) => {
+    //     dispatch(deleteToDoList(id))
+    // }
+
     console.log();
     return (
         <Card styleName="card-shadow">
@@ -33,7 +37,7 @@ const ScheduledList = () => {
                                 <i className="fas fa-edit" style={{marginRight: "30px"}}></i>
                             </button>
                             <button>
-                                <i className="far fa-trash-alt"></i>
+                                <i className="far fa-trash-alt" ></i>
                             </button>
                         </div>
                 </Card>
