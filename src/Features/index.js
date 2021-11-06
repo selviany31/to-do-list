@@ -26,7 +26,7 @@ const FeatureRoute = () => {
                     </Card>
                 </Link>
             </div>
-            <div className="container">
+            <div className="container" style={{marginTop: "30px"}}>
             <Switch>
                 {routes.map((route, index) => (
                 <Route
