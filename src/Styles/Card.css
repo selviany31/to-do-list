@@ -8,6 +8,7 @@
     box-shadow: 1px 3px 5px 0px rgba(173,168,168,0.75);
     border-radius: 5px;
     padding: 5px 10px;
+    min-width: 250px;
 }
 
 .card-bg-red {

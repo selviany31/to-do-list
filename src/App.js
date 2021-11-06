@@ -1,19 +1,16 @@
-import Card from "./Components/Card";
 import Header from "./Components/Header";
+import { BrowserRouter as Router } from "react-router-dom";
 import './Styles/style.css'
+import FeatureRoute from "./Features";
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Header />
-      <div style={{display: "flex"}}>
-      <Card styleName="card-border card-bg-orange"/>
-      <Card styleName="card-border card-bg-blue"/>
-      <Card styleName="card-border"/>
-      <Card styleName="card-border"/>
-
-      </div>
+      <FeatureRoute />
     </div>
+    </Router>
   );
 }
 
