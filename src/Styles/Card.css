@@ -1,0 +1,19 @@
+.card-border {
+    border: 1px solid rgb(225, 222, 222);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.card-shadow {
+    border: 0px solid rgb(111, 109, 109);
+    box-shadow: 1px 3px 5px 0px rgba(173,168,168,0.75);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.card-bg-red {
+    background-color: #FD6059;
+}
+
+.card-bg-blue {
+    background-color: #7087D5;
+}
