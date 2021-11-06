@@ -1,11 +1,14 @@
-import React from 'react'
+import ScheduledList from "../Features/ScheduledList";
+import DoneList from "../Features/DoneList";
 
-function index() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default index
+export const routes = [
+    {
+        path: '/done',
+        component: DoneList
+    },
+    {
+        path: '/',
+        exact: true,
+        component: ScheduledList
+    },
+]
